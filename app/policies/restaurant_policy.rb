@@ -7,5 +7,13 @@ class RestaurantPolicy < ApplicationPolicy
     def show?
       true
     end
+
+    def new?
+      return create?
+    end
+
+    def create?
+      true
+    end
   end
 end
